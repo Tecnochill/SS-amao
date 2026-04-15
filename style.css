@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap');
+
+:root {
+    --nasa-blue:       #0B3D91;
+    --nasa-red:        #FC3D21;        
+    --deep-space:      #020B18;
+    --nebula-purple:   #2D1B69;
+    --galaxy-violet:   #4A1A8C;
+    --cosmic-cyan:     #00D4FF;
+    --star-white:      #E8F4FD;
+    --pulsar-pink:     #FF2D7E;
+    --comet-teal:      #00FFD1;
+    --asteroid-gray:   #1C2A3A;
+    --surface:         #0D1B2A;
+    --surface-2:       #122033;
+    --surface-3:       #1A2E44;
+    --glass-bg: rgba(13, 27, 42, 0.75);
+    --glass-border: rgba(0, 212, 255, 0.2);
+    --glass-bur: blur(18px);
+
+    --font-display: 'Orbritron', monospace;
+    --font-body: 'Exo 2', sans-serif;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: var(--font-body);
+    background: var(--deep-space);
+    color: var(--star-white);
+    overflow-x: hidden;
+}
