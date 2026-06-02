@@ -65,3 +65,38 @@ html, body {
     background-size: 400px 400px;
     animation: twinkle 8s infinite alternate;
 }
+
+.estrelado1::after {
+    background-size: 600px 600px;
+    animation-duration: 12s;
+    animation-direction: alternate-reverse;
+    opacity: 0.6s;
+}
+
+@keyframes twinkle {
+    0% { opacity: 0.4; transform: translate(0, 0); }
+    100% { opacity: 0.9; transform:translate(-10px, -5px);}
+}
+
+.estrelado2 {
+    position:fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(ellipse 80% 50% at 20% 30%, rgba(45, 27, 105, 0.45) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 40% at 80% 70%, rgba(11, 61, 145, 0.35) 0% transparent 60%),
+      radial-gradient(ellipse 50% 60% at 60% 20%, rgba(0, 212, 255, 0.08) 0% transparent 55%),
+}
+
+#app {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+}
+
+.page {
+    display:none;
+    min-height: 100vh;
+    animation: fadeIn 0.5s ease;
+}
