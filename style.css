@@ -14,6 +14,7 @@
     --surface:         #0D1B2A;
     --surface-2:       #122033;
     --surface-3:       #1A2E44;
+    
     --glass-bg: rgba(13, 27, 42, 0.75);
     --glass-border: rgba(0, 212, 255, 0.2);
     --glass-bur: blur(18px);
@@ -37,6 +38,7 @@ html, body {
 }
 
 .estrelado1 {
+
     position:fixed;
     inset:0;
     z-index: 0;
@@ -44,17 +46,17 @@ html, body {
     overflow: hidden;
 }
 
-.estrelado1::before
+.estrelado1::before,
 .estrelado1::after {
     content: '';
-    position:absolute;
+    position: absolute;
     inset: -50%;
     width: 200%;
     height: 200%;
     background-image:
       radial-gradient(1px 1px at 10% 20%, #fff 0%, transparent 100%),
-      radial-gradient(1px 1px at 30% 70%, #fff 0% transparent 100%),
-      radial-gradient(1.5px 1.5px at 50% 10% var(--cosmic-cyan) 0% transparent 100% ),
+      radial-gradient(1px 1px at 30% 70%, #fff 0%, transparent 100%),
+      radial-gradient(1.5px 1.5px at 50% 10%, var(--cosmic-cyan) 0%, transparent 100% ),
       radial-gradient(1px 1px at 70% 40%, #fff 0%, transparent 100%),
       radial-gradient(2px 2px at 85% 80%, var(--cosmic-cyan) 0%, transparent 100%),
       radial-gradient(1px 1px at 20% 90%, #fff 0%, transparent 100%),
@@ -70,7 +72,7 @@ html, body {
     background-size: 600px 600px;
     animation-duration: 12s;
     animation-direction: alternate-reverse;
-    opacity: 0.6s;
+    opacity: 0.6;
 }
 
 @keyframes twinkle {
@@ -85,8 +87,8 @@ html, body {
     pointer-events: none;
     background:
       radial-gradient(ellipse 80% 50% at 20% 30%, rgba(45, 27, 105, 0.45) 0%, transparent 60%),
-      radial-gradient(ellipse 60% 40% at 80% 70%, rgba(11, 61, 145, 0.35) 0% transparent 60%),
-      radial-gradient(ellipse 50% 60% at 60% 20%, rgba(0, 212, 255, 0.08) 0% transparent 55%),
+      radial-gradient(ellipse 60% 40% at 80% 70%, rgba(11, 61, 145, 0.35) 0%, transparent 60%),
+      radial-gradient(ellipse 50% 60% at 60% 20%, rgba(0, 212, 255, 0.08) 0%, transparent 55%);
 }
 
 #app {
